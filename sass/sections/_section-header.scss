@@ -42,33 +42,35 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #header {
-			a {
-					border-bottom: 0;
-					color: $white;
-					&:hover, &.active {
-						border-bottom: 0;
-						color: $orange;
-					}
-			}
-        &.fixed {
-            a {
+       .header-content {
+            width: 90%;
+            padding: 40px 0;
+       }
+			 a {
+					 border-bottom: 0;
+					 color: $white;
+					 &:hover, &.active {
+						 border-bottom: 0;
+						 color: $turkiz;
+					 }
+			 }
+			 &.fixed {
+						 a {
 								border-bottom: 0;
-                color: $white;
+								color: $white;
 								&:hover, &.active {
 									border-bottom: 0;
-	                color: $orange;
+									color: $turkiz;
 								}
-
-                &.logo{
-                	 color: $black;
-                }
-            }
-        }
+								&.logo{
+									 color: $black;
+								}
+						 }
+			 }
     }
 }
-
 
 
 
@@ -77,7 +79,7 @@
 	Banner
 -------------------------------------------------------------------------------*/
 .banner {
-	background-image: url(./img/backs/orange-back.jpg);
+	background-image: url(./img/backs/banner.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
