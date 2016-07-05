@@ -1,0 +1,45 @@
+
+/* Media
+---------------------------------- */
+.media {
+    .fa {
+    	font-size: 38px;
+    	width: 40px;
+    	height: 25px;
+    	line-height: 48px;
+    	padding: 0 5px;
+    	text-align: center;
+    }
+}
+
+.space {
+	padding: 20px 0;
+}
+
+blockquote {
+    padding: 10px 5px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+}
+
+
+/* block-lists
+---------------------------------- */
+.block-list {
+    .media-left {
+    	width: 60px;
+    }
+
+    p {
+    	font-size: 14px;
+    }
+
+    .fa {
+        padding: 20px;
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        color: $white;
+        background: $turkiz;
+    }
+}

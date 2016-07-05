@@ -1,0 +1,144 @@
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+body {
+	font-family: $font-lato, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: $text-body;
+	background-color: $white;
+	position: relative;
+}
+html, body {
+	height: 100%;
+}
+a {
+	color: $turkiz;
+}
+a:hover {
+	color: $black;
+}
+a:focus, a:active {
+	outline: none;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	transition: background-color, color, 0.3s;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+blockquote {
+	border-left: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 5px;
+}
+.title {
+	margin-top: 0;
+}
+
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+p {
+	font-size: 16px;
+	line-height: 22.4px;
+	color: $text-p;
+}
+h1 {
+	font-size: 65px;
+	color: $text-title;
+}
+h2 {
+	font-size: 40px;
+	color: $text-title;
+}
+h3 {
+	font-size: 28px;
+	color: $text-title;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+	color: $text-title;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: $text-title;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.section {
+	padding: 70px 0;
+}
+
+/* ------------------------------------------------------------------------------
+	Buttons
+-------------------------------------------------------------------------------*/
+.btn {
+	background-color: $turkiz;
+	color: $white;
+	font-size: 16px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 2px;
+	display: inline-block;
+	text-transform: uppercase;
+	border: 1px solid $turkiz;
+
+	&:hover, &:focus {
+		background-color: transparent;
+		color: $turkiz;
+	}
+}
+
+.btn-ultra {
+		font-family: $font-source-sans-pro;
+    background: $white;
+    border: 4px solid $white;
+    border-radius: 0;
+    box-shadow: none;
+    color: $turkiz;
+    font-weight: 700;
+    padding: 18px 45px;
+    min-width: 380px;
+    font-size: 24px;
+    margin: 0 40px;
+    -webkit-font-smoothing: antialiased;
+    transition: all .25s;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1,1);
+
+		&:hover {
+		    background: transparent;
+		    border: 4px solid $white;
+		    color: $white;
+		    padding: 30px 50px;
+		    margin-top: -12px;
+		    margin-bottom: -12px
+		}
+		em {
+		    font-style: italic;
+		    font-size: 16px;
+		    font-weight: 400;
+		}
+}
+
+.btn-ultra-white {
+    background: $turkiz;
+    border: 4px solid $turkiz;
+    color: $white;
+
+		&:hover {
+		    background: transparent;
+		    border: 4px solid $turkiz;
+		    color: $turkiz;
+		}
+}
