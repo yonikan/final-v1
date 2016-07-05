@@ -2,9 +2,12 @@
 /* intro
 ---------------------------------- */
 #intro {
-  background-color: $header-fixed;
+  background-color: $section-background;
+  -webkit-clip-path: polygon(0 0,100% 5%,100% 95%,0 100%);
+clip-path: polygon(0 0,100% 5%,100% 95%,0 100%);
+
   h2 {
-    color: $white;
+    color: $text-title;
   }
   p {
     color: #8D9DAD;

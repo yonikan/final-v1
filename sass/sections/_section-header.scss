@@ -25,14 +25,9 @@
 		letter-spacing: 7px;
 	}
 	&.fixed {
-		background-color: rgba(44, 62, 80, 0.93);
-
+		background-color: rgba(44, 62, 80, 0.9);
 		a {
 			color: $white;
-		}
-
-		a:hover, a:active {
-			color: $turkiz;
 		}
 
 		.header-content {
@@ -41,17 +36,48 @@
 		}
 		.nav-toggle {
 			top: 18px;
-			color: $black;
+			color: $white;
 		}
 	}
 }
+
+
+@media screen and (max-width: 768px) {
+    #header {
+			a {
+					border-bottom: 0;
+					color: $white;
+					&:hover, &.active {
+						border-bottom: 0;
+						color: $orange;
+					}
+			}
+        &.fixed {
+            a {
+								border-bottom: 0;
+                color: $white;
+								&:hover, &.active {
+									border-bottom: 0;
+	                color: $orange;
+								}
+
+                &.logo{
+                	 color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
 .banner {
-	background-image: url(./img/backs/banner.jpg);
+	background-image: url(./img/backs/orange-back.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;

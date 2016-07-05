@@ -49,17 +49,3 @@
          }
     }
 }
-
-
-@media screen and (max-width: 768px) {
-    #header {
-        &.fixed {
-            a {
-                color: $white;
-                &.logo{
-                	 color: $black;
-                }
-            }
-        }
-    }
-}

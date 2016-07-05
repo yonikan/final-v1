@@ -19,8 +19,16 @@
 		margin-left: 40px;
 		text-transform: uppercase;
 		&:hover, &.active {
-			color: $turkiz;
+	    border-bottom: 2px solid #fff;
 		}
+	}
+
+	.hight-lighted {
+		background: #fff;
+		font-weight: 700;
+		color: #f56857;
+		padding: 9px;
+		border-radius: 6px;
 	}
 }
 
@@ -56,14 +64,14 @@
 	&:before {
 		transform: scale(1);
 		transition-duration: 0.3s;
-		color: $turkiz;
+		color: $orange;
 	}
 
 	&:after {
 		background-color: transparent;
 		transform: scale(0);
 		transition-duration: 0s;
-		color: $turkiz;
+		color: $orange;
 	}
 
 	span {

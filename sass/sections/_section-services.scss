@@ -40,6 +40,8 @@ blockquote {
         height: 88px;
         border-radius: 50%;
         color: $white;
-        background: $turkiz;
+        background: $orange;
+        -webkit-clip-path: rect(110px, 160px, 170px, 60px);
+        // clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     }
 }
