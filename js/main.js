@@ -1,5 +1,5 @@
 
-	// Header Scroll
+	// Header fixed with scroll
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
 
@@ -11,39 +11,23 @@
 	});
 
 
-	// background Strech
-	// $(".banner-image").backstretch('../dist/img/backs/back-blue1.jpg');
-
-
-	// wow.js initialization
+	// Wow.js init
   var myWindow = $(window)
-	if (myWindow.width()>530) {
+	if (myWindow.width() > 530) {
 		new WOW().init();
 	};
 
 
-
-
-	// Fancybox
-	$('.work-box').fancybox();
-
-
-	// Flexslider
-	$('.flexslider').flexslider({
-		animation: "fade",
-		directionNav: false,
-	});
-
-
-	// Page Scroll
+	// Makes the nav a active with the page scroll
 	var sections = $('section');
   var	nav = $('nav[role="navigation"]');
 
 	$(window).on('scroll', function () {
 	  	var cur_pos = $(this).scrollTop();
 	  	sections.each(function() {
-	    	var top = $(this).offset().top - 76
-	        	bottom = top + $(this).outerHeight();
+	    	var top = $(this).offset().top - 76;
+        var	bottom = top + $(this).outerHeight();
+
 	    	if (cur_pos >= top && cur_pos <= bottom) {
 	      		nav.find('a').removeClass('active');
 	      		nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
@@ -51,12 +35,16 @@
 	  	});
 	});
 
+
+  // The animation between sections
 	nav.find('a').on('click', function () {
-	  	var $el = $(this)
-	    	id = $el.attr('href');
+  	var $el = $(this);
+  	var id = $el.attr('href');
+
 		$('html, body').animate({
 			scrollTop: $(id).offset().top - 75
-		}, 500);
+		}, 800);
+
 	  return false;
 	});
 

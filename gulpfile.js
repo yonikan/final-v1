@@ -10,7 +10,7 @@ var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
 
 // ... production version ----
-var production = true;
+var production = false;
 var htmlmin = require('gulp-htmlmin');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
@@ -44,7 +44,7 @@ gulp.task('sass', function() {
       .pipe(sourcemaps.init())
       .pipe(sass(sassOptions).on('error', sass.logError))
       .pipe(gulpif(production, autoprefixer(autoprefixerOptions), cssnano()))
-      .pipe(sourcemaps.write('./vendor/others'))
+      .pipe(sourcemaps.write('./vendor/others/sourcemaps'))
       .pipe(gulp.dest("./dist"))
       .pipe(browserSync.stream());
 });

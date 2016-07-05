@@ -1,1 +1,71 @@
-$(document).ready(function(){$(window).on("scroll",function(){var o=$(window).scrollTop();o>=50?$("#header").addClass("fixed"):$("#header").removeClass("fixed")});var o=$(window);o.width()>530&&(new WOW).init(),$(".work-box").fancybox(),$(".flexslider").flexslider({animation:"fade",directionNav:!1});var n=$("section"),t=$('nav[role="navigation"]');$(window).on("scroll",function(){var o=$(this).scrollTop();n.each(function(){var n=$(this).offset().top-76;bottom=n+$(this).outerHeight(),o>=n&&o<=bottom&&(t.find("a").removeClass("active"),t.find('a[href="#'+$(this).attr("id")+'"]').addClass("active"))})}),t.find("a").on("click",function(){var o=$(this);return id=o.attr("href"),$("html, body").animate({scrollTop:$(id).offset().top-75},500),!1}),$(".nav-toggle").on("click",function(){return $(this).toggleClass("close-nav"),t.toggleClass("open"),!1}),t.find("a").on("click",function(){$(".nav-toggle").toggleClass("close-nav"),t.toggleClass("open")})});
+
+ $(document).ready(function(){ 
+
+	// Header fixed with scroll
+	$(window).on('scroll', function() {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 50) {
+			$('#header').addClass('fixed');
+		} else {
+			$('#header').removeClass('fixed');
+		}
+	});
+
+
+	// Wow.js init
+  var myWindow = $(window)
+	if (myWindow.width() > 530) {
+		new WOW().init();
+	};
+
+
+	// Makes the nav a active with the page scroll
+	var sections = $('section');
+  var	nav = $('nav[role="navigation"]');
+
+	$(window).on('scroll', function () {
+	  	var cur_pos = $(this).scrollTop();
+	  	sections.each(function() {
+	    	var top = $(this).offset().top - 76;
+        var	bottom = top + $(this).outerHeight();
+
+	    	if (cur_pos >= top && cur_pos <= bottom) {
+	      		nav.find('a').removeClass('active');
+	      		nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+	    	}
+	  	});
+	});
+
+
+  // The animation between sections
+	nav.find('a').on('click', function () {
+  	var $el = $(this);
+  	var id = $el.attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - 75
+		}, 800);
+
+	  return false;
+	});
+
+
+	// Mobile Navigation
+	$('.nav-toggle').on('click', function() {
+		$(this).toggleClass('close-nav');
+		nav.toggleClass('open');
+		return false;
+	});
+	nav.find('a').on('click', function() {
+		$('.nav-toggle').toggleClass('close-nav');
+		nav.toggleClass('open');
+	});
+
+
+
+
+// yonikan test!
+const test = "testing";
+
+ }); // End document ready 
