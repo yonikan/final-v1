@@ -1,4 +1,9 @@
 
+#services {
+    -webkit-clip-path: polygon(0 0,100% 5%,100% 95%,0 100%);
+    clip-path: polygon(0 0,100% 5%,100% 95%,0 100%);
+
+}
 /* Media
 ---------------------------------- */
 .media {

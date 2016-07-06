@@ -1,0 +1,17 @@
+
+/* features
+---------------------------------- */
+#features {
+  -webkit-clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+  // z-index: 2;
+  // position: relative;
+
+
+  p {
+    color: #8D9DAD;
+  }
+  .blank-section {
+    height: 800px;
+  }
+}

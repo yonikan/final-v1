@@ -1,5 +1,4 @@
 
-@import "vars";
 @import "globals";
 
 // header
@@ -7,6 +6,10 @@
 @import "sections/navigation";
 
 // sections
-@import "sections/section-intro";
 @import "sections/section-services";
+@import "sections/section-intro";
 @import "sections/section-features";
+@import "sections/section-contact";
+
+// footer
+@import "sections/section-footer";

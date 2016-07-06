@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Final v1 - a yoniKan project</title>
 
-      <!-- PROJECT CSS -->
-      <%- include('css') %>
+    <!-- PROJECT CSS -->
+    <link href="dist/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="dist/vendor/others/animate.min.css" rel="stylesheet" >
+    <link href="dist/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="dist/style.css" rel="stylesheet" >
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+    <!-- FavIcon -->
+    <link href="dist/img/favicon.png" rel="icon" type="image/png">
   </head>
 	<body>
 
@@ -17,18 +26,26 @@
 		<!-- header start ------------------------------------------------------------------->
     <%- include('sections/section-header') %>
 
-    <!-- intro start ------------------------------------------------------------------->
-    <%- include('sections/section-intro') %>
-
 		<!-- services start ------------------------------------------------------------------>
     <%- include('sections/section-services') %>
+
+    <!-- intro start ------------------------------------------------------------------->
+    <%- include('sections/section-intro') %>
 
     <!-- features start ------------------------------------------------------------------->
     <%- include('sections/section-features') %>
 
+    <!-- contact start ------------------------------------------------------------------->
+    <%- include('sections/section-contact') %>
+
+    <!-- footer start ------------------------------------------------------------------->
+    <%- include('sections/section-footer') %>
 
 		<!-- PROJECT JAVASCRIPT -->
-    <%- include('js') %>
+    <script src="dist/vendor/others/jquery.min.js"></script>
+    <script src="dist/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/vendor/others/wow.min.js"></script>
+    <script src="dist/bundle.js"></script>
 
 	</body>
 </html>
