@@ -222,31 +222,67 @@
     
   <!-- contact section ------------------------------------------------------------------>
   <section class="section" id="contact" role="contact">
-    <div class="container wow fadeIn animated">
+    <div class="container wow fadeIn animated ">
       <h1 class="title text-center">Contact</h1>
       <p class="lead text-center">We're here to help make your life easier.</p>
       <div class="space"></div>
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
           <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.
-               Sed quis tortor magna. Maecenas hendrerit feugiat pulvinar. Aenean condimentum quam eu ultricies cursus.
-                Nulla facilisi. In hac habitasse platea dictumst. Ut nec tellus neque. Sed non dui eget arcu elementum facilisis.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.
-               Sed quis tortor magna. Maecenas hendrerit feugiat pulvinar. Aenean condimentum quam eu ultricies cursus.
-                Nulla facilisi. In hac habitasse platea dictumst. Ut nec tellus neque. Sed non dui eget arcu elementum facilisis.
-            </p>
+            <!-- FORM -->
+            <form action="mail.php" method="POST" role="form">
+                <div id="name-group" class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Henry Pym" required>
+                    <!-- errors will go here -->
+                </div>
+                <div id="email-group" class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email" placeholder="rudd@avengers.com" required>
+                    <!-- errors will go here -->
+                </div>
+                <div id="superhero-group" class="form-group">
+                    <label for="superheroAlias">Superhero Alias</label>
+                    <input type="text" class="form-control" name="superheroAlias" placeholder="Ant Man" required>
+                    <!-- errors will go here -->
+                </div>
+                <div class="space"></div>
+                <button type="submit" class="btn-ultra btn-ultra-color">Submit <span class="fa fa-arrow-right"></span></button>
+            </form>
           </div>
         </div>
+        <div class="col-md-2"></div>
       </div>
 
 
     </div>
   </section>
   <!-- section end ------------------------------------------------------------------->
+
+
+
+  <section class="content bgcolor-7">
+  				<h2>Jiro</h2>
+  				<span class="input input--jiro input--filled">
+  					<input class="input__field input__field--jiro" type="text" id="input-10">
+  					<label class="input__label input__label--jiro" for="input-10">
+  						<span class="input__label-content input__label-content--jiro">Cat's Name</span>
+  					</label>
+  				</span>
+  				<span class="input input--jiro">
+  					<input class="input__field input__field--jiro" type="text" id="input-11">
+  					<label class="input__label input__label--jiro" for="input-11">
+  						<span class="input__label-content input__label-content--jiro">Dog's Name</span>
+  					</label>
+  				</span>
+  				<span class="input input--jiro">
+  					<input class="input__field input__field--jiro" type="text" id="input-12">
+  					<label class="input__label input__label--jiro" for="input-12">
+  						<span class="input__label-content input__label-content--jiro">Hamster's Name</span>
+  					</label>
+  				</span>
+  			</section>
 
 
     <!-- footer start ------------------------------------------------------------------->
@@ -259,11 +295,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.
-               Sed quis tortor magna. Maecenas hendrerit feugiat pulvinar. Aenean condimentum quam eu ultricies cursus.
-                Nulla facilisi. In hac habitasse platea dictumst. Ut nec tellus neque. Sed non dui eget arcu elementum facilisi.
-            </p>
+
           </div>
         </div>
       </div>

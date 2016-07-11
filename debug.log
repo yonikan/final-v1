@@ -1,0 +1,4 @@
+[0710/012115:ERROR:process_reader_win.cc(141)] SuspendThread: Access is denied. (0x5)
+[0710/012115:ERROR:exception_snapshot_win.cc(57)] thread ID 3064 not found in process
+[0710/012115:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0710/012115:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
